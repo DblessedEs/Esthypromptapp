@@ -1,4 +1,3 @@
-// Connect to your Google Sheet API (your existing Sheet ID used)
 const API_URL = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://docs.google.com/spreadsheets/d/1mC3FTfix3FHL43Le_BLfulqRPptcY_IKgLxp7WNvYPM/gviz/tq?tqx=out:json');
 
 let prompts = [];
@@ -21,15 +20,17 @@ async function fetchPrompts() {
         const rows = json.table.rows;
 
         prompts = rows.map(row => row.c[0].v);
-        displayPrompts(prompts);
+        // ✅ Only show 3 prompts on first load, not all
+        displayPrompts(prompts.slice(0, 3));
+        updatePromptCount(prompts.length);
     } catch (error) {
         console.error('Failed to fetch prompts:', error);
     }
 }
 
-function displayPrompts(filteredPrompts) {
+function displayPrompts(promptsToDisplay) {
     promptList.innerHTML = '';
-    filteredPrompts.forEach(prompt => {
+    promptsToDisplay.forEach(prompt => {
         const li = document.createElement('li');
         li.textContent = prompt;
         li.addEventListener('click', () => {
@@ -37,7 +38,6 @@ function displayPrompts(filteredPrompts) {
         });
         promptList.appendChild(li);
     });
-    updatePromptCount(filteredPrompts.length);
 }
 
 function updatePromptCount(count) {
@@ -49,7 +49,7 @@ function updatePromptCount(count) {
 searchInput.addEventListener('input', () => {
     const keyword = searchInput.value.toLowerCase();
     const filtered = prompts.filter(p => p.toLowerCase().includes(keyword));
-    displayPrompts(filtered);
+    displayPrompts(filtered); // ✅ Show all matches when searching
 });
 
 copyButton.addEventListener('click', () => {
@@ -62,7 +62,6 @@ copyButton.addEventListener('click', () => {
     });
 });
 
-// Tabs for Menu
 tabLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -119,4 +118,4 @@ function getTabContent(tab) {
 }
 
 fetchPrompts();
-tabContent.innerHTML = getTabContent('home')
+tabContent.innerHTML = getTabContent('home');
