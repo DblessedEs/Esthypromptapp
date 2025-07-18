@@ -1,26 +1,29 @@
 body {
-    font-family: sans-serif;
-    background-color: white;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ffe6f0, #ffffff);
     margin: 0;
     padding: 20px;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #d63384; /* Soft pink accent */
 }
 
 h1 {
-    font-size: 24px;
     text-align: center;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 h2 {
     font-size: 20px;
     margin-bottom: 5px;
-    color: #333;
 }
 
 h3 {
     font-size: 16px;
     margin-top: 20px;
-    color: #444;
 }
 
 .description {
@@ -33,9 +36,10 @@ input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #f3c6d1;
+    border-radius: 6px;
     font-size: 16px;
+    background-color: #fff0f5;
 }
 
 textarea {
@@ -44,21 +48,24 @@ textarea {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #f3c6d1;
+    border-radius: 6px;
+    background-color: #fff0f5;
 }
 
 button {
-    background-color: #333;
+    background-color: #d63384;
     color: white;
     padding: 10px 20px;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
     margin-top: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #c2185b;
 }
 
 #copyAlert {
@@ -73,20 +80,20 @@ ul {
 
 li {
     padding: 8px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f9d7e2;
     cursor: pointer;
 }
 
 li:hover {
-    background-color: #f9f9f9;
+    background-color: #ffe6f0;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    border-top: 1px solid #ccc;
-    background-color: #f9f9f9;
+    border-top: 1px solid #f9d7e2;
+    background-color: #fff0f5;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -96,6 +103,6 @@ nav {
     font-size: 24px;
     background: none;
     border: none;
-    color: #333;
+    color: #d63384;
     cursor: pointer;
 }
