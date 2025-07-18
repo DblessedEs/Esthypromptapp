@@ -1,130 +1,101 @@
-/* General Styles */
 body {
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    background: #ffffff;
-    color: #111111;
+    font-family: sans-serif;
+    background-color: white;
     margin: 0;
     padding: 20px;
-    line-height: 1.6;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #3B82F6;
-    font-weight: 600;
 }
 
 h1 {
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-size: 1.4rem;
-}
-
-h3 {
-    font-size: 1.2rem;
+    font-size: 24px;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-/* Header */
-header {
-    background: #f9fafb;
-    padding: 20px;
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #444;
+}
+
+.description {
     text-align: center;
-    border-bottom: 1px solid #e5e7eb;
+    color: #555;
     margin-bottom: 20px;
 }
 
-/* Search Input */
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin: 10px 0 20px 0;
-    border: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box;
 }
 
-/* Textarea */
 textarea {
     width: 100%;
-    padding: 15px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    margin-top: 10px;
+    height: 150px;
+    padding: 10px;
     font-size: 16px;
-    min-height: 120px;
-    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Buttons */
 button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #3B82F6;
+    background-color: #333;
     color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    margin-top: 5px;
 }
 
 button:hover {
-    background-color: #2563eb;
+    background-color: #555;
 }
 
-/* Copy Alert */
 #copyAlert {
     margin-top: 10px;
     color: green;
 }
 
-/* Prompt List */
 ul {
     list-style: none;
     padding: 0;
 }
 
-.category-section {
-    margin-bottom: 20px;
-}
-
-.category-section h3 {
-    color: #3B82F6;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.category-section li {
+li {
     padding: 8px 0;
+    border-bottom: 1px solid #eee;
     cursor: pointer;
-    border-bottom: 1px solid #e5e7eb;
-    transition: background-color 0.2s;
 }
 
-.category-section li:hover {
-    background-color: #f0f9ff;
+li:hover {
+    background-color: #f9f9f9;
 }
 
-/* Navigation */
 nav {
-    background-color: #f9fafb;
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
     position: fixed;
-    bottom: 0;
     width: 100%;
-    box-sizing: border-box;
+    bottom: 0;
 }
 
 .nav-icon {
-    font-size: 20px;
+    font-size: 24px;
     background: none;
     border: none;
-    color: #3B82F6;
-    padding: 10px;
+    color: #333;
+    cursor: pointer;
 }
