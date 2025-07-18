@@ -178,3 +178,21 @@ li:hover {
     color: var(--text-gray);
     line-height: 1.6;
 }
+.intro-box {
+    background-color: #f0f9ff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light-gray);
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.intro-box h2 {
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.intro-box p {
+    color: var(--text-gray);
+    font-size: 15px;
+}
