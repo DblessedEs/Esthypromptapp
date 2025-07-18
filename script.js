@@ -1,4 +1,4 @@
-// Replace this with your actual Google Sheet URL
+// Connect to your Google Sheet API (your existing Sheet ID used)
 const API_URL = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://docs.google.com/spreadsheets/d/1mC3FTfix3FHL43Le_BLfulqRPptcY_IKgLxp7WNvYPM/gviz/tq?tqx=out:json');
 
 let prompts = [];
@@ -75,8 +75,8 @@ function getTabContent(tab) {
     switch (tab) {
         case 'home':
             return `<div class="tab-box">
-                        <h2>Welcome to Esthy Prompt Generator</h2>
-                        <p>Esthy Prompt Generator helps you manage and access high-quality AI prompts directly from your Google Sheet. Easily search, customize, and copy prompts for academic, business, or creative use cases.</p>
+                        <h2>Welcome to Esthy Prompt App</h2>
+                        <p>Esthy Prompt App helps you manage and access high-quality AI prompts directly from your Google Sheet. Easily search, customize, and copy prompts for academic, business, or creative use cases.</p>
                     </div>`;
         case 'tips':
             return `<div class="tab-box">
@@ -111,7 +111,7 @@ function getTabContent(tab) {
         case 'about':
             return `<div class="tab-box">
                         <h2>About Us</h2>
-                        <p>Esthy Prompt Generator connects your AI prompt bank directly from Google Sheets, making updates easy. Built for students, professionals, and creatives who rely on structured prompts for better AI outputs.</p>
+                        <p>Esthy Prompt App connects your AI prompt bank directly from Google Sheets, making updates easy. Built for students, professionals, and creatives who rely on structured prompts for better AI outputs.</p>
                     </div>`;
         default:
             return '';
