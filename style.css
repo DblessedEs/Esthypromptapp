@@ -1,3 +1,14 @@
+:root {
+    --background-white: #ffffff;
+    --background-pink-gradient: #ffe6f0;
+    --accent-pink: #d63384;
+    --accent-pink-hover: #c2185b;
+    --border-soft-pink: #f3c6d1;
+    --text-color: #333333;
+    --line-light-pink: #f9d7e2;
+    --success-green: green;
+}
+
 /* Global Reset */
 * {
     box-sizing: border-box;
@@ -8,14 +19,14 @@
 /* Body & App Background */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+    background: linear-gradient(to bottom, var(--background-pink-gradient), var(--background-white));
     padding: 20px;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Header Styling */
 .app-header {
-    background-color: #fff;
+    background-color: var(--background-white);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -24,7 +35,7 @@ body {
 }
 
 .app-header h1 {
-    color: #d63384;
+    color: var(--accent-pink);
     font-size: 24px;
     margin-bottom: 5px;
     font-weight: 600;
@@ -32,7 +43,7 @@ body {
 
 .app-logo {
     font-size: 32px;
-    color: #d63384;
+    color: var(--accent-pink);
     margin-bottom: 10px;
 }
 
@@ -40,7 +51,7 @@ body {
 input[type="text"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #f3c6d1;
+    border: 1px solid var(--border-soft-pink);
     border-radius: 6px;
     margin-bottom: 20px;
     font-size: 16px;
@@ -51,7 +62,7 @@ input[type="text"] {
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #f3c6d1;
+    border: 1px solid var(--border-soft-pink);
     border-radius: 6px;
     background-color: #fff0f5;
     font-size: 16px;
@@ -61,7 +72,7 @@ textarea {
 
 /* Buttons */
 button {
-    background-color: #d63384;
+    background-color: var(--accent-pink);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -71,12 +82,12 @@ button {
 }
 
 button:hover {
-    background-color: #c2185b;
+    background-color: var(--accent-pink-hover);
 }
 
 #copyAlert {
     margin-top: 10px;
-    color: green;
+    color: var(--success-green);
 }
 
 /* Prompts List */
@@ -88,12 +99,12 @@ ul {
 
 li {
     padding: 10px 0;
-    border-bottom: 1px solid #f9d7e2;
+    border-bottom: 1px solid var(--line-light-pink);
     cursor: pointer;
 }
 
 li:hover {
-    background-color: #ffe6f0;
+    background-color: var(--background-pink-gradient);
 }
 
 /* Dropdown Menu Styling */
@@ -105,13 +116,17 @@ li:hover {
 }
 
 .menu-icon {
-    background-color: #d63384;
+    background-color: var(--accent-pink);
     color: white;
     padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 6px;
+}
+
+.menu-icon:hover {
+    background-color: var(--accent-pink-hover);
 }
 
 .dropdown-content {
@@ -126,7 +141,7 @@ li:hover {
 }
 
 .dropdown-content a {
-    color: #d63384;
+    color: var(--accent-pink);
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -134,7 +149,7 @@ li:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: #ffe6f0;
+    background-color: var(--background-pink-gradient);
 }
 
 .dropdown:hover .dropdown-content {
@@ -143,16 +158,16 @@ li:hover {
 
 /* Tab Box Styling */
 .tab-box {
-    background-color: white;
+    background-color: var(--background-white);
     padding: 20px;
-    border: 1px solid #f3c6d1;
+    border: 1px solid var(--border-soft-pink);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
 }
 
 .tab-box h2 {
-    color: #d63384;
+    color: var(--accent-pink);
     margin-bottom: 10px;
 }
 
