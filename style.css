@@ -172,3 +172,26 @@ nav {
     color: #444;
     line-height: 1.6;
 }
+.tab-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #f3c6d1;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.tab-box h2 {
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.tab-box ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.tab-box p, .tab-box li {
+    line-height: 1.6;
+}
