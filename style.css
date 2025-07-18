@@ -196,3 +196,17 @@ li:hover {
     color: var(--text-gray);
     font-size: 15px;
 }
+.app-header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    vertical-align: middle;
+}
