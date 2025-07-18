@@ -1,5 +1,6 @@
 const prompts = [
     "Write a blog post about hidden travel destinations.",
+    "Write a script for a 30-minute podcast episode on 'The Rise of Remote Work'. Include an engaging introduction, interviews with remote workers, discussion of tools and strategies, and a conclusion. Use a conversational and informative tone. Structure the script with clear segments and transitions, and include notes for sound effects or music."
     "Generate a marketing plan for a small business.",
     "Create content ideas for a fitness page on Instagram.",
     "Draft a resignation letter template for employees.",
