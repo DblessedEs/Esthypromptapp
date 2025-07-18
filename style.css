@@ -196,3 +196,26 @@ li:hover {
     color: var(--text-gray);
     font-size: 15px;
 }
+.app-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--text-gray);
+    border-top: 1px solid var(--border-light-gray);
+    margin-top: 30px;
+    background-color: #ffffff;
+}
+
+.app-footer a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.app-footer a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 5px;
+}
