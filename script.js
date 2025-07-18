@@ -19,10 +19,9 @@ async function fetchPrompts() {
         const json = JSON.parse(text.substr(47).slice(0, -2));
         const rows = json.table.rows;
 
-        prompts = rows.map(row => row.c[0].v);
-        // ✅ Only show 3 prompts on first load, not all
-        displayPrompts(prompts.slice(0, 3));
-        updatePromptCount(prompts.length);
+        prompts = rows.map(row => row.c[0].v).filter(Boolean);
+        updatePromptCount(prompts.length); // Show total available (9 is fine)
+        displayPrompts(prompts.slice(0, 3)); // Only show 3 prompts
     } catch (error) {
         console.error('Failed to fetch prompts:', error);
     }
@@ -49,7 +48,7 @@ function updatePromptCount(count) {
 searchInput.addEventListener('input', () => {
     const keyword = searchInput.value.toLowerCase();
     const filtered = prompts.filter(p => p.toLowerCase().includes(keyword));
-    displayPrompts(filtered); // ✅ Show all matches when searching
+    displayPrompts(filtered); // Show all matches
 });
 
 copyButton.addEventListener('click', () => {
