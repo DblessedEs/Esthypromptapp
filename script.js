@@ -167,7 +167,15 @@ function getTabContent(tab) {
             return `<h2>About Us</h2>
                 <p>Esthy Prompt Generator was created to assist individuals in writing smarter, clearer, and more effective prompts for AI writing tools. Our mission is to help users achieve professional and academic success through better communication.</p>`;
         default:
-            return '';
+            return ''; case 'draw':
+            return `<h2>Football Draw Predictions</h2>
+                <p>Expert insights and strategies for identifying high-probability football matches likely to end in a draw. Focus on data trends, team form, and betting value opportunities.</p>`;
+        case 'basketball':
+            return `<h2>Basketball Betting Strategies</h2>
+                <p>Guidance on analyzing basketball matchups, statistics, player performance, and trends to improve your betting decisions. Covers leagues like NBA, EuroLeague, and others.</p>`;
+        case 'over':
+            return `<h2>Over 2.5 Goals Predictions</h2>
+                <p>Detailed analysis on finding football matches with strong likelihood for over 2.5 goals. Covers tactics, league trends, team scoring habits, and betting value.</p>`;
     }
 }
 
