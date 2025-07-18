@@ -104,23 +104,21 @@ li {
 li:hover {
     background-color: #f0f9ff;
 }
-
-/* Dropdown Menu Styling */
+/* Dropdown Menu Styling (Fixed & Smaller) */
 .dropdown {
-    position: relative;
-    display: inline-block;
-    float: right;
-    margin-top: -35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .menu-icon {
     background-color: var(--accent-blue);
     color: white;
-    padding: 10px;
-    font-size: 16px;
+    padding: 6px 12px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .menu-icon:hover {
@@ -153,6 +151,7 @@ li:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
 }
 
 /* Tab Box Styling */
