@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Esthy Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Esthy Prompt Generator</h1>
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+                <a href="#" data-tab="home">Home</a>
+                <a href="#" data-tab="tips">Tips</a>
+                <a href="#" data-tab="prompt">Prompt of the Day</a>
+                <a href="#" data-tab="disclaimer">Disclaimer</a>
+                <a href="#" data-tab="terms">Terms & Conditions</a>
+                <a href="#" data-tab="about">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="tabContent" class="tab-content"></div>
+
+    <section class="main-section">
+        <h2><span class="blue-star">★</span> Professional Prompt Bank</h2>
+        <p class="description">
+            Browse, search, edit, and copy professional prompts for ChatGPT, Claude, or any AI assistant.
+        </p>
+
+        <input type="text" id="searchInput" placeholder="Search prompts by keyword (e.g. marketing, business)" />
+        <h3 id="promptCount">Available Prompts (0)</h3>
+        <ul id="promptList"></ul>
+
+        <textarea id="promptTextarea" placeholder="Select a prompt to edit..."></textarea>
+        <button id="copyButton">Copy Prompt</button>
+        <div id="copyAlert" class="hidden">✅ Prompt copied to clipboard!</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
