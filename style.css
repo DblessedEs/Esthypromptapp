@@ -1,11 +1,9 @@
 :root {
     --background-white: #ffffff;
-    --background-pink-gradient: #ffe6f0;
-    --accent-pink: #d63384;
-    --accent-pink-hover: #c2185b;
-    --border-soft-pink: #f3c6d1;
-    --text-color: #333333;
-    --line-light-pink: #f9d7e2;
+    --accent-blue: #3B82F6;
+    --text-black: #111111;
+    --border-light-gray: #e5e7eb;
+    --text-gray: #444444;
     --success-green: green;
 }
 
@@ -16,26 +14,25 @@
     padding: 0;
 }
 
-/* Body & App Background */
+/* Body & Background */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, var(--background-pink-gradient), var(--background-white));
+    background-color: var(--background-white);
     padding: 20px;
-    color: var(--text-color);
+    color: var(--text-black);
 }
 
 /* Header Styling */
 .app-header {
     background-color: var(--background-white);
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--border-light-gray);
     margin-bottom: 20px;
     text-align: center;
 }
 
 .app-header h1 {
-    color: var(--accent-pink);
+    color: var(--accent-blue);
     font-size: 24px;
     margin-bottom: 5px;
     font-weight: 600;
@@ -43,7 +40,7 @@ body {
 
 .app-logo {
     font-size: 32px;
-    color: var(--accent-pink);
+    color: var(--accent-blue);
     margin-bottom: 10px;
 }
 
@@ -51,28 +48,29 @@ body {
 input[type="text"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid var(--border-soft-pink);
+    border: 1px solid var(--border-light-gray);
     border-radius: 6px;
     margin-bottom: 20px;
     font-size: 16px;
-    background-color: #fff0f5;
+    background-color: #f9fafb;
 }
 
 /* Textarea */
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid var(--border-soft-pink);
+    border: 1px solid var(--border-light-gray);
     border-radius: 6px;
-    background-color: #fff0f5;
+    background-color: #f9fafb;
     font-size: 16px;
     min-height: 120px;
     margin-bottom: 10px;
+    color: var(--text-black);
 }
 
 /* Buttons */
 button {
-    background-color: var(--accent-pink);
+    background-color: var(--accent-blue);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -82,7 +80,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-pink-hover);
+    background-color: #2563eb;
 }
 
 #copyAlert {
@@ -90,7 +88,7 @@ button:hover {
     color: var(--success-green);
 }
 
-/* Prompts List */
+/* Prompt List */
 ul {
     list-style: none;
     padding: 0;
@@ -99,12 +97,12 @@ ul {
 
 li {
     padding: 10px 0;
-    border-bottom: 1px solid var(--line-light-pink);
+    border-bottom: 1px solid var(--border-light-gray);
     cursor: pointer;
 }
 
 li:hover {
-    background-color: var(--background-pink-gradient);
+    background-color: #f0f9ff;
 }
 
 /* Dropdown Menu Styling */
@@ -116,7 +114,7 @@ li:hover {
 }
 
 .menu-icon {
-    background-color: var(--accent-pink);
+    background-color: var(--accent-blue);
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -126,22 +124,23 @@ li:hover {
 }
 
 .menu-icon:hover {
-    background-color: var(--accent-pink-hover);
+    background-color: #2563eb;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #fff0f5;
+    background-color: var(--background-white);
     min-width: 160px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     z-index: 1;
+    border: 1px solid var(--border-light-gray);
     border-radius: 6px;
 }
 
 .dropdown-content a {
-    color: var(--accent-pink);
+    color: var(--accent-blue);
     padding: 10px;
     text-decoration: none;
     display: block;
@@ -149,7 +148,7 @@ li:hover {
 }
 
 .dropdown-content a:hover {
-    background-color: var(--background-pink-gradient);
+    background-color: #f0f9ff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -160,14 +159,14 @@ li:hover {
 .tab-box {
     background-color: var(--background-white);
     padding: 20px;
-    border: 1px solid var(--border-soft-pink);
+    border: 1px solid var(--border-light-gray);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
 }
 
 .tab-box h2 {
-    color: var(--accent-pink);
+    color: var(--accent-blue);
     margin-bottom: 10px;
 }
 
@@ -177,6 +176,6 @@ li:hover {
 }
 
 .tab-box p, .tab-box li {
-    color: #444;
+    color: var(--text-gray);
     line-height: 1.6;
 }
