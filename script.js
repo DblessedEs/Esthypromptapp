@@ -33,7 +33,36 @@ const prompts = [
     `Draft a formal, engaging press release to announce the launch of a new eco-friendly product line by a fashion brand. The press release should include: 1️⃣ A compelling headline and subheadline that highlight sustainability and innovation, 2️⃣ Key product features and benefits, 3️⃣ Official launch date and availability, 4️⃣ Quotes from company executives emphasizing the brand’s commitment to sustainability, and 5️⃣ A professional closing statement inviting media inquiries and public engagement. Use a formal, polished, and promotional tone. Target length: 400 words, structured in standard press release format.`,
 
     `Write a persuasive, well-structured editorial titled: "The Importance of Mental Health Awareness in the Modern Workplace." Structure the piece with: 1️⃣ A strong, engaging introduction that sets the tone, 2️⃣ Key body sections discussing statistics on mental health, the impact on productivity, and benefits of proactive workplace policies, and 3️⃣ A compelling conclusion with actionable recommendations. Include real-world examples, personal insights, and up-to-date statistics to strengthen your points. Maintain a supportive, empathetic, and persuasive tone throughout. Target length: 1200 words. The goal is to inspire employers and leaders to take mental health initiatives seriously.`
-];
+`Act like a professional sports analyst, expert in football betting strategies, machine learning, and data-driven predictions. You specialize in identifying football betting opportunities by comparing bookmaker odds with AI-driven probabilistic forecasts.
+
+Objective:  
+Your goal is to generate highly detailed football match predictions with a targeted winning accuracy of 90%. You will use AI statistical reasoning to compare bookmaker odds to AI-predicted probabilities and recommend bets with the highest value. You must clearly indicate the confidence level of each prediction and provide precise betting recommendations (1X2, Over/Under, Asian Handicap, etc.). This prompt is strictly for informational and entertainment purposes and does not constitute financial advice.
+
+Step-by-step instructions:  
+
+1. Collect and analyze current data on upcoming football matches, including bookmaker odds, team form, player injuries, recent performance statistics, and other contextual factors such as home/away status and weather conditions.
+
+2. Generate AI-driven probability forecasts for each match outcome (Win, Draw, Lose) expressed as percentages. Your AI model should prioritize value betting opportunities where AI probability significantly differs from bookmaker implied probability.
+
+3. Perform a direct comparison between bookmaker odds and your AI probability forecast. Calculate the expected value (EV) of each possible betting option and focus only on positive EV opportunities.
+
+4. Provide a detailed betting recommendation for each match with:  
+   - Suggested bet type (e.g., 1X2, Over/Under, Double Chance, Asian Handicap)
+   - Clear rationale explaining why this bet offers strong value
+   - Your AI model's probability for this outcome (expressed as a percentage)
+   - Bookmaker implied probability based on current odds
+   - Expected Value (EV) score
+   - Confidence level: High / Medium / Low with reasoning behind the classification
+
+5. For each betting recommendation, write a detailed risk assessment explaining why this bet has a higher probability of success according to AI analysis. Highlight any risks or uncertainties involved.
+
+6. Provide a final summary list ranking the top 5 bets of the day in order of expected accuracy, confidence level, and EV.
+
+7. Format your output in a structured, clear, and professional manner with bullet points, headings, and data tables where relevant to enhance readability and comprehension.
+
+8. Always remind the user that sports betting carries financial risks and there is no guarantee of profit, even with high-probability predictions.
+
+Take a deep breath and work on this problem step-by-step.`];
 
 const searchInput = document.getElementById('searchInput');
 const promptList = document.getElementById('promptList');
