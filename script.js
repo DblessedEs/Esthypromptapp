@@ -47,41 +47,48 @@ copyButton.addEventListener('click', () => {
 });
 
 fetchPrompts();
-const tabLinks = document.querySelectorAll('.dropdown-content a');
-const tabContent = document.getElementById('tabContent');
-
-tabLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const tab = link.dataset.tab;
-        tabContent.innerHTML = getTabContent(tab);
-    });
-});
-
 function getTabContent(tab) {
     switch (tab) {
         case 'home':
-            return `<h2>Welcome to Esthy Prompt Generator</h2>
-                    <p>This tool provides high-quality prompts for students, professionals, and AI users. Easily search, edit, and copy prompts for your work.</p>`;
+            return `<div class="tab-box">
+                        <h2>Welcome to Esthy Prompt Generator</h2>
+                        <p>Esthy Prompt Generator is a professional tool designed to help users discover, customize, and utilize high-quality AI prompts for educational, business, and creative purposes. Whether you’re writing for ChatGPT, Claude, or any AI assistant, this tool helps you access proven prompt examples easily.</p>
+                    </div>`;
         case 'tips':
-            return `<h2>Tips for Using Prompts Effectively</h2>
-                    <ul>
-                        <li>Be clear and specific in your prompts.</li>
-                        <li>Review AI results carefully.</li>
-                        <li>Adapt prompts to your goal (academic, business, etc.).</li>
-                    </ul>`;
+            return `<div class="tab-box">
+                        <h2>Tips for Using Prompts Effectively</h2>
+                        <ul>
+                            <li>Clearly define the goal or output you want from the AI.</li>
+                            <li>Use precise and structured instructions within your prompt.</li>
+                            <li>Review AI results critically before using them professionally.</li>
+                            <li>Continuously improve your prompts based on AI responses.</li>
+                        </ul>
+                    </div>`;
         case 'prompt':
-            return `<h2>Prompt of the Day</h2>
-                    <p>Prepare a structured, high-quality AI prompt daily to improve your results.</p>`;
+            return `<div class="tab-box">
+                        <h2>Prompt of the Day</h2>
+                        <p>Write a comprehensive analysis on 'How AI is Transforming Small Businesses in 2025', covering trends, case studies, and future predictions. Tone: Professional, Informative, Strategic.</p>
+                    </div>`;
         case 'disclaimer':
-            return `<h2>Disclaimer</h2>
-                    <p>This app offers prompts for educational purposes only. No AI is connected. Results depend on how prompts are used.</p>`;
+            return `<div class="tab-box">
+                        <h2>Disclaimer</h2>
+                        <p>Esthy Prompt Generator is provided for educational and informational purposes only. This app does not generate AI outputs. Users are responsible for how prompts are adapted or used. We make no guarantees of accuracy or performance from AI platforms where prompts are applied.</p>
+                    </div>`;
         case 'terms':
-            return `<h2>Terms & Conditions</h2>
-                    <p>Use prompts responsibly. No data is stored. Prompts are for personal use only.</p>`;
+            return `<div class="tab-box">
+                        <h2>Terms & Conditions</h2>
+                        <ul>
+                            <li>Prompts provided are for personal, academic, or professional use only.</li>
+                            <li>We do not collect, store, or share any user data.</li>
+                            <li>Updates may occur without prior notice to enhance app quality.</li>
+                            <li>Use responsibly and within the legal policies of AI tools you use.</li>
+                        </ul>
+                    </div>`;
         case 'about':
-            return `<h2>About Us</h2>
-                    <p>Esthy Prompt Generator helps people write better prompts for AI tools. Built with care to support learning and productivity.</p>`;
+            return `<div class="tab-box">
+                        <h2>About Us</h2>
+                        <p>Esthy Prompt Generator was built to empower individuals, students, and professionals with reliable prompt templates for AI platforms. Our mission is to simplify how people interact with AI and enhance productivity through well-crafted prompt libraries.</p>
+                    </div>`;
         default:
             return '';
     }
