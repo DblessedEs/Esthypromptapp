@@ -140,6 +140,15 @@ function getTabContent(tab) {
                     <li>Review AI outputs carefully for accuracy and tone.</li>
                     <li>Always adapt prompts for your target audience.</li>
                 </ul>`;
+            case 'draw':
+            return `<h2>Football Draw Predictions</h2>
+                <p>Expert insights and strategies for identifying high-probability football matches likely to end in a draw. Focus on data trends, team form, and betting value opportunities.</p>`;
+        case 'basketball':
+            return `<h2>Basketball Betting Strategies</h2>
+                <p>Guidance on analyzing basketball matchups, statistics, player performance, and trends to improve your betting decisions. Covers leagues like NBA, EuroLeague, and others.</p>`;
+        case 'over':
+            return `<h2>Over 2.5 Goals Predictions</h2>
+                <p>Detailed analysis on finding football matches with strong likelihood for over 2.5 goals. Covers tactics, league trends, team scoring habits, and betting value.</p>`;
         case 'prompt':
             return `<h2>Prompt of the Day</h2>
                     <p>${getDailyPrompt()}</p>`;
